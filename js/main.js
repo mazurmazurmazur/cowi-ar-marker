@@ -2,6 +2,7 @@ let link =
   "https://cmv.cowi.com/geoserver/cmv/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cmv:dk_wfs_annotation_naithani&maxFeatures=50&outputFormat=application%2Fjson";
 
 function fetchContact(x) {
+  console.log("link dziala poprawne: " + x);
   fetch(x)
     .then(res => res.json())
     .then(fillHome);
