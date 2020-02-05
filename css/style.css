@@ -1,0 +1,21 @@
+button {
+  width: 25vw;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid gray;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 0 10px 0;
+  z-index: 200;
+}
+button:hover {
+  background-color: gainsboro;
+}
+
+#btnWrapper {
+  display: inline-block;
+  position: fixed;
+  top: 10vh;
+  left: 25vw;
+  z-index: 100;
+}

@@ -5,6 +5,12 @@
       name="viewport"
       content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/style.css"
+    />
   </head>
   <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
   <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
@@ -13,6 +19,14 @@
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
   <body style="margin : 0px; overflow: hidden;">
+    <div id="btnWrapper">
+      <button onclick="fetchContact(link1)" id="mockaroo">
+        online mock JSON
+      </button>
+      <button onclick="fetchContact(link2)" id="geoJSON">
+        downloaded geo JSON
+      </button>
+    </div>
     <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
     <a-scene
       id="scene"
@@ -25,14 +39,6 @@
           src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"
         ></a-asset-item>
       </a-assets>
-
-      <!-- <a-marker type="barcode" value="7">
-        <a-box position="0 0.5 0" color="yellow"></a-box>
-      </a-marker>
-
-      <a-marker id="animated-marker" type="barcode" value="6">
-        <a-entity gltf-model="#animated-asset" scale="2"> </a-entity>
-      </a-marker> -->
 
       <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
       <a-entity camera></a-entity>
