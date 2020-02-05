@@ -17,7 +17,7 @@ function fillHome(json) {
     let newMarker = document.createElement("a-marker");
     let newText = document.createElement("a-text");
 
-    if (el.id) {
+    if (el.first_name) {
       newMarker.setAttribute("value", el.id);
       newText.setAttribute("value", el.first_name);
     } else {
