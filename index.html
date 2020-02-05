@@ -33,16 +33,9 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
     >
-      <a-marker preset="hiro">
+      <a-marker type="pattern" preset="custom" url="./assets/hiro-mrkr.patt">
         <a-box position="0 0.5 0" material="color: yellow;"></a-box>
       </a-marker>
-
-      <a-assets>
-        <a-asset-item
-          id="articuno"
-          src="./assets/articuno/scene.gltf"
-        ></a-asset-item>
-      </a-assets>
 
       <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
       <a-entity camera></a-entity>
