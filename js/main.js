@@ -21,7 +21,7 @@ function fillHome(json) {
       newMarker.setAttribute("value", el.id);
       newText.setAttribute("value", el.first_name);
     } else {
-      newMarker.setAttribute("value", properties.id);
+      newMarker.setAttribute("value", el.properties.id);
       newText.setAttribute("value", el.id);
     }
 
