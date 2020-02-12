@@ -12,21 +12,13 @@
       href="./css/style.css"
     />
   </head>
-  <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
   <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
 
   <!-- add this script in order to load a large set of 3D model extensions-->
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
   <body style="margin : 0px; overflow: hidden;">
-    <div id="btnWrapper">
-      <button onclick="fetchContact(link1)" id="mockaroo">
-        online mock JSON
-      </button>
-      <button onclick="fetchContact(link2)" id="geoJSON">
-        downloaded geo JSON
-      </button>
-    </div>
     <!-- we add deftectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
     <a-scene
       id="scene"
@@ -55,7 +47,7 @@
         <a-entity rotation="-90 0 0">
           <a-entity
             scale="3 3 2"
-            position="0 0.6 0"
+            position="0 0.7 0"
             text="value : Nowy tekst; align: center; baseline: top; color: red;"
           ></a-entity>
           <a-image src="./assets/marker.png"></a-image>

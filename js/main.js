@@ -1,4 +1,3 @@
-let link1 = "https://my.api.mockaroo.com/users.json?key=a99e7550";
 let link2 = "./json/geo.json";
 
 function fetchContact(x) {
@@ -36,4 +35,4 @@ function fillHome(json) {
   });
 }
 
-fetchContact(link1);
+fetchContact(link2);
