@@ -138,16 +138,20 @@
           var that = this;
 
           document.addEventListener("touchend", function(event) {
-            var catched = false;
-            if (event) {
-              that.nextSlide();
-              catched = true;
-            }
+            // var catched = false;
+            // if (event) {
+            //   that.nextSlide();
+            //   catched = true;
+            // }
 
-            if (catched) {
-              event.stopPropagation();
-              event.preventDefault();
-            }
+            // if (catched) {
+            //   event.stopPropagation();
+            //   event.preventDefault();
+            // }
+
+            document.dispatchEvent(
+              new KeyboardEvent("keydown", { keyCode: "39" })
+            );
           });
           document.addEventListener("keydown", function(event) {
             var catched = false;
