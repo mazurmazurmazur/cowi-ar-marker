@@ -138,6 +138,7 @@
           var that = this;
 
           document.addEventListener("touchend", function(event) {
+            var catched = false;
             if (event) {
               that.nextSlide();
               catched = true;
