@@ -27,6 +27,7 @@ function fillHome(json) {
 
     newPlane.setAttribute("rotation", "-90 0 0");
     newPlane.setAttribute("material", "color: green; opacity: 0.4;");
+    newPlane.setAttribute("position", "0 0.1 0");
 
     newMarker.appendChild(newText);
     scene.appendChild(newMarker);
