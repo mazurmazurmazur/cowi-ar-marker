@@ -30,6 +30,7 @@ function fillHome(json) {
     newPlane.setAttribute("position", "0 0.1 0");
 
     newMarker.appendChild(newText);
+    newMarker.appendChild(newPlane);
     scene.appendChild(newMarker);
   });
 }
