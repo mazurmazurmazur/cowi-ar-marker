@@ -137,18 +137,17 @@
         addListeners: function() {
           var that = this;
 
-          document.addEventListener(
-            "touchend",
-            function(event) {
-              if (event) {
-                that.nextSlide();
-                console.log("touched inside if");
-              }
+          document.addEventListener("touchend", function(event) {
+            if (event) {
+              that.nextSlide();
+              catched = true;
+            }
 
-              console.log("touched with effect outside of if");
-            },
-            true
-          );
+            if (catched) {
+              event.stopPropagation();
+              event.preventDefault();
+            }
+          });
           document.addEventListener("keydown", function(event) {
             var catched = false;
             if (event.keyCode === 39) {
