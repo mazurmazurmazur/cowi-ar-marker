@@ -137,14 +137,18 @@
         addListeners: function() {
           var that = this;
 
-          document.addEventListener("touch", function(event) {
-            if (event) {
-              that.nextSlide();
-              console.log("touched inside if");
-            }
+          document.addEventListener(
+            "touchend",
+            function(event) {
+              if (event) {
+                that.nextSlide();
+                console.log("touched inside if");
+              }
 
-            console.log("touched with effect outside of if");
-          });
+              console.log("touched with effect outside of if");
+            },
+            true
+          );
           document.addEventListener("keydown", function(event) {
             var catched = false;
             if (event.keyCode === 39) {
