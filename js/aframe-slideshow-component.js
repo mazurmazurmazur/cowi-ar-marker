@@ -138,7 +138,12 @@
           var that = this;
 
           document.addEventListener("touch", function(event) {
-            that.nextSlide();
+            if (event) {
+              that.nextSlide();
+              console.log("touched inside if");
+            }
+
+            console.log("touched with effect outside of if");
           });
           document.addEventListener("keydown", function(event) {
             var catched = false;
