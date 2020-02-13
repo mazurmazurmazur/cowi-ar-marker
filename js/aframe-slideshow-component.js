@@ -184,11 +184,6 @@
               .addEventListener("buttondown", handleController);
           }
 
-          //Handles screen resizing
-          window.addEventListener("resize", function() {
-            this.goToSlide(this.currentIndex, true);
-          });
-
           //Handles entering/exiting VR mode to replace the camera to the correct position
           document
             .querySelector("a-scene")
