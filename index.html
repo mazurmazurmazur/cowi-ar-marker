@@ -15,7 +15,6 @@
   <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
   <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
   <script src="./js/aframe-slideshow-component.js"></script>
-  <script src="https://rawgit.com/allanweir/aframe-touch-rotation-controls/master/dist/aframe-touch-rotation-controls.min.js"></script>
 
   <!-- add this script in order to load a large set of 3D model extensions-->
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -41,7 +40,7 @@
       >
 
       <a-entity
-      universal-controls="movementControls: hmd; rotationControls: touch-rotation"
+      look-controls
       gltf-model="#building"
       scale="1 1 1"
       position="0 -2.5 -2.5"
