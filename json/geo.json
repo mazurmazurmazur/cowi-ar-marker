@@ -52,22 +52,6 @@
     },
     {
       "type": "Feature",
-      "id": "dk_wfs_annotation_naithani.8",
-      "geometry": {
-        "type": "MultiPoint",
-        "coordinates": [[12.50739931, 55.65050676, 6.0e-8]]
-      },
-      "geometry_name": "geom",
-      "properties": {
-        "id": 8,
-        "classid": "1",
-        "username": "CMVadmin",
-        "created": "2019-09-11T07:58:18.224Z",
-        "annotation": "[{\"guid\":\"961C84A3-8896-409B-82A0-8701466A5243\",\"gidbprj\":\"22f8f06a-ae41-446a-b3a6-af771b100201\",\"gidbimg\":13822178,\"geom\":[[4459,1917],[4425,2271],[4365,2275],[4396,1915],[4459,1917]],\"prop\":{\"type\":\"uav\"},\"type\":\"RECTANGLE\"}]"
-      }
-    },
-    {
-      "type": "Feature",
       "id": "dk_wfs_annotation_naithani.13",
       "geometry": {
         "type": "MultiPoint",

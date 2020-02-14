@@ -26,16 +26,19 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
     >
+      <a-assets>
+        <a-asset-item
+          id="building"
+          src="./assets/building/model.gltf"
+        ></a-asset-item>
+      </a-assets>
+
       <a-marker
         type="pattern"
         preset="custom"
         url="./assets/pattern-markr2b.patt"
       >
-        <a-plane
-          rotation="-90 0 0"
-          position="0 0.1 0"
-          material="color: green; opacity: 0.4;"
-        ></a-plane>
+        <!-- <a-box color="tomato" depth="2" height="4" width="0.5"> </a-box> -->
       </a-marker>
 
       <a-marker
@@ -43,20 +46,19 @@
         preset="custom"
         url="./assets/pattern-toyota.patt"
       >
-        <!-- <a-box
-          position="0 0.5 0"
-          size="0.1 0.1 0.1"
-          material="color: green;"
-        ></a-box> -->
+        <a-entity
+          rotation="-90 0 0"
+          aframe-slideshow="nbslides:5;folder:./assets/slides/;namingConv:Slide_%num%;vidSlidesIndex:3;animSlidesIndex:5"
+        ></a-entity>
 
-        <a-entity rotation="-90 0 0">
+        <!-- <a-entity rotation="-90 0 0">
           <a-entity
             scale="3 3 2"
             position="0 0.7 0"
             text="value : Nowy tekst; align: center; baseline: top; color: red;"
           ></a-entity>
           <a-image src="./assets/marker.png"></a-image>
-        </a-entity>
+        </a-entity> -->
       </a-marker>
 
       <a-marker
@@ -67,6 +69,16 @@
         <a-entity
           aframe-slideshow="nbslides:5;folder:./assets/slides/;namingConv:Slide_%num%;vidSlidesIndex:3;animSlidesIndex:5"
         ></a-entity>
+      </a-marker>
+
+      <a-marker type="pattern" preset="custom" url="./assets/pattern-hiro.patt">
+        <a-entity
+          gltf-model="#building"
+          scale="1 1 1"
+          position="0 -2.5 -2.5"
+          rotation="90 0 0"
+        >
+        </a-entity>
       </a-marker>
 
       <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
