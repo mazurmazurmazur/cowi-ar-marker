@@ -39,7 +39,14 @@
         preset="custom"
         url="./assets/pattern-markr2b.patt"
       >
-        <!-- <a-box color="tomato" depth="2" height="4" width="0.5"> </a-box> -->
+
+      <a-entity
+      universal-controls="movementControls: hmd; rotationControls: touch-rotation"
+      gltf-model="#building"
+      scale="1 1 1"
+      position="0 -2.5 -2.5"
+      rotation="90 0 0"
+    >
       </a-marker>
 
       <a-marker
@@ -48,7 +55,7 @@
         url="./assets/pattern-toyota.patt"
       >
         <a-entity
-          rotation="-90 0 0"
+          rotation="0 0 0"
           aframe-slideshow="nbslides:5;folder:./assets/slides/;namingConv:Slide_%num%;vidSlidesIndex:3;animSlidesIndex:5"
         ></a-entity>
 
@@ -68,18 +75,13 @@
         url="./assets/pattern-cowi-marker.patt"
       >
         <a-entity
+          rotation="-90 0 0"
           aframe-slideshow="nbslides:5;folder:./assets/slides/;namingConv:Slide_%num%;vidSlidesIndex:3;animSlidesIndex:5"
         ></a-entity>
       </a-marker>
 
       <a-marker type="pattern" preset="custom" url="./assets/pattern-hiro.patt">
-        <a-entity
-          universal-controls="movementControls: hmd; rotationControls: touch-rotation"
-          gltf-model="#building"
-          scale="1 1 1"
-          position="0 -2.5 -2.5"
-          rotation="90 0 0"
-        >
+      
         </a-entity>
       </a-marker>
 
