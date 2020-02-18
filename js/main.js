@@ -28,10 +28,10 @@ function fillHome(json) {
     // newPlane.setAttribute("position", "0 0.1 0");
 
     newMarker.addEventListener("markerFound", e => {
-      // document.getElementById(
-      //   "descriptionH1"
-      // ).innerHTML = `Drive ${el.properties.id}`;
-      document.getElementById("descriptionDiv").display = "block";
+      document.getElementById(
+        "descriptionH1"
+      ).innerHTML = `Drive ${el.properties.id}`;
+      // document.getElementById("descriptionDiv").display = "block";
 
       console.log(`Here is what you scanned: ${e}`);
     });
