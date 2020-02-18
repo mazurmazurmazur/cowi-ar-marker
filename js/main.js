@@ -31,9 +31,9 @@ function fillHome(json) {
       // document.getElementById(
       //   "descriptionH1"
       // ).innerHTML = `Drive ${el.properties.id}`;
-      console.log(`Here is what you scanned: ${e}`);
-
       document.getElementById("descriptionDiv").display = "block";
+
+      console.log(`Here is what you scanned: ${e}`);
     });
 
     // newMarker.appendChild(newText);
