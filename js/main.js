@@ -9,10 +9,8 @@ function fetchContact(x) {
 function fillHome(json) {
   console.log(json);
 
-  let jsonFE = json.features ? json.features : json;
-
   document.getElementById("scene");
-  jsonFE.forEach(el => {
+  json.forEach(el => {
     let newMarker = document.createElement("a-marker");
     let newPlane = document.createElement("a-plane");
     let newText = document.createElement("a-text");
