@@ -28,15 +28,16 @@ function fillHome(json) {
     // newPlane.setAttribute("position", "0 0.1 0");
 
     newMarker.addEventListener("markerFound", e => {
-      document.getElementById(
-        "descriptionH1"
-      ).innerHTML = `Drive ${el.properties.id}`;
+      // document.getElementById(
+      //   "descriptionH1"
+      // ).innerHTML = `Drive ${el.properties.id}`;
+      console.log(`Here is what you scanned: ${e}`);
 
       document.getElementById("descriptionDiv").display = "block";
     });
 
-    newMarker.appendChild(newText);
-    newMarker.appendChild(newPlane);
+    // newMarker.appendChild(newText);
+    // newMarker.appendChild(newPlane);
     scene.appendChild(newMarker);
   });
 }
