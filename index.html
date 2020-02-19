@@ -31,6 +31,7 @@
           id="building"
           src="./assets/building/model.gltf"
         ></a-asset-item>
+        <a-asset-item id="pokoj" src="./assets/pokoj.obj"></a-asset-item>
       </a-assets>
 
       <a-marker
@@ -68,10 +69,11 @@
         preset="custom"
         url="./assets/pattern-cowi-marker.patt"
       >
-        <a-entity
+        <!-- <a-entity
           rotation="-90 0 0"
           aframe-slideshow="nbslides:5;folder:./assets/slides/;namingConv:Slide_%num%;vidSlidesIndex:3;animSlidesIndex:5"
-        ></a-entity>
+        ></a-entity> -->
+        <a-obj-model src="#pokoj"></a-obj-model>
       </a-marker>
 
       <a-marker type="pattern" preset="custom" url="./assets/pattern-hiro.patt">
