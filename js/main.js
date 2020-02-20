@@ -59,4 +59,4 @@ function closeDesc() {
 // });
 
 let cowiMarker = document.getElementById("cowiMarker");
-cowiMarker.addEventListener("markerLost", e => {});
+cowiMarker.addEventListener("markerFound", e => {});
