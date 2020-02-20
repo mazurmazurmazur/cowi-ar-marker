@@ -57,3 +57,6 @@ function closeDesc() {
 //   console.log(cowiMarker.childNodes[4]);
 //   document.getElementById("scene").appendChild(cowiMarker.childNodes[4]);
 // });
+
+let cowiMarker = document.getElementById("cowiMarker");
+cowiMarker.addEventListener("markerLost", e => {});
