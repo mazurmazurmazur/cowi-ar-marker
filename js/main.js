@@ -51,3 +51,9 @@ function showDrive() {
 function closeDesc() {
   document.getElementById("descriptionDiv").style.display = "none";
 }
+
+// let cowiMarker = document.getElementById("cowiMarker");
+// cowiMarker.addEventListener("markerFound", e => {
+//   console.log(cowiMarker.childNodes[4]);
+//   document.getElementById("scene").appendChild(cowiMarker.childNodes[4]);
+// });

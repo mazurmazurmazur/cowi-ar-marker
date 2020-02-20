@@ -27,11 +27,7 @@
       arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
     >
       <a-assets>
-        <a-asset-item
-          id="building"
-          src="./assets/building/model.gltf"
-        ></a-asset-item>
-        <a-asset-item id="pokoj" src="./assets/pokoj.obj"></a-asset-item>
+        <a-asset-item id="house" src="./assets/House.glb"></a-asset-item>
       </a-assets>
 
       <a-marker
@@ -64,17 +60,22 @@
         </a-entity> -->
       </a-marker>
 
-      <a-marker
+      <a-marker-camera
         type="pattern"
         preset="custom"
         url="./assets/pattern-cowi-marker.patt"
+        id="cowiMarker"
       >
         <!-- <a-entity
           rotation="-90 0 0"
           aframe-slideshow="nbslides:5;folder:./assets/slides/;namingConv:Slide_%num%;vidSlidesIndex:3;animSlidesIndex:5"
         ></a-entity> -->
-        <a-obj-model src="#pokoj"></a-obj-model>
-      </a-marker>
+        <a-gltf-model
+          scale="2 2 2"
+          rotation="-90 0 0"
+          src="#house"
+        ></a-gltf-model>
+      </a-marker-camera>
 
       <a-marker type="pattern" preset="custom" url="./assets/pattern-hiro.patt">
       </a-marker>
