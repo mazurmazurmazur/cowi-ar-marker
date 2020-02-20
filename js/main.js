@@ -58,5 +58,5 @@ function closeDesc() {
 //   document.getElementById("scene").appendChild(cowiMarker.childNodes[4]);
 // });
 
-let cowiMarker = document.getElementById("cowiMarker");
-cowiMarker.addEventListener("markerFound", e => {});
+// let cowiMarker = document.getElementById("cowiMarker");
+// cowiMarker.addEventListener("markerFound", e => {});
